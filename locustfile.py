@@ -16,3 +16,7 @@ class WebsiteUser(HttpUser):
     @task
     def load_faq_page(self):
         self.client.get(f"{HOST_URL}/faq-home")
+    
+    @task
+    def load_faq_page(self):
+        self.client.get(f"{HOST_URL}/sign-up")
